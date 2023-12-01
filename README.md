@@ -10,6 +10,7 @@ As the competition goes on I'll add more tasks and QoL improvements.
 ## Structure
 Each day has two functions to run each part, one that takes in no input (this one reaches out to the AoC site and gets the input), and one that takes in input (this is used to run test data).  
 For now I'm not focusing on scoreboard times, but if I do I'll put my scoreboard times with each problem.
+## Progress
 | Day      | Part 1 | Part 2 |
 | ---------| -------| ------ |
 | 1        | [X]    |  [X]   |
