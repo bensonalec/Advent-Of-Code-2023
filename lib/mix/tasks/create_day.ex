@@ -18,6 +18,10 @@ defmodule Mix.Tasks.CreateDay do
       [app_dir, "samples", "d#{day}p2ex.txt"]
     )
 
+    readme_path = Path.join(
+      [app_dir, "README.md"]
+    )
+
     File.write(
       new_file_path_ex1,
       "",
@@ -86,6 +90,11 @@ defmodule Mix.Tasks.CreateDay do
       """,
       [:write]
     )
+    File.write(
+      readme_path,
+      "| #{day}        |        |        |
+      ",
+      [:append, {:delayed_write, 100, 20}])
 
   end
 end
