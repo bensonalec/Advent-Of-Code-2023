@@ -1,5 +1,5 @@
 # Aoc
-[![Elixir CI](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml/badge.svg)](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml)
+[![Elixir CI](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml/badge.svg)](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml)  
 This repo contains my 2023 Advent of Code submissions.  
 ## Features
 As well as this, there are a number of helpful features.  
