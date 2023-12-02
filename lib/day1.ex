@@ -13,8 +13,8 @@ defmodule Aoc.Day1 do
     |> String.split("\n", trim: true)
     |> Enum.map(fn x ->
       create_int_from_two_strings(
-        x |> find_first_integer |> elem(1) |> Integer.to_string,
-        x |> String.reverse |> find_first_integer |> elem(1) |> Integer.to_string
+        x |> find_first_integer |> elem(1) |> to_string(),
+        x |> String.reverse() |> find_first_integer |> elem(1) |> to_string()
       )
     end)
     |> Enum.sum()
@@ -33,14 +33,14 @@ defmodule Aoc.Day1 do
     inp
     |> String.split("\n", trim: true)
     |> Enum.map(fn x ->
-      compare_ints(
-        x |> find_first_integer,
-        x |> find_lowest_text_digit(:no_reverse)
-      )
-      <>
-      compare_ints(
-        x |> String.reverse() |> find_first_integer,
-        x |> String.reverse() |> find_lowest_text_digit(:reverse))
+      (compare_ints(
+         x |> find_first_integer,
+         x |> find_lowest_text_digit(:no_reverse)
+       ) <>
+         compare_ints(
+           x |> String.reverse() |> find_first_integer,
+           x |> String.reverse() |> find_lowest_text_digit(:reverse)
+         ))
       |> Integer.parse()
       |> elem(0)
     end)
@@ -56,11 +56,9 @@ defmodule Aoc.Day1 do
   end
 
   defp find_lowest_text_digit(inp, reverse_flag) do
-    digits = determine_digits(reverse_flag)
-
     0..8
     |> Enum.map(fn y ->
-      case :binary.match(inp, Enum.at(digits, y)) do
+      case :binary.match(inp, Enum.at(determine_digits(reverse_flag), y)) do
         {val, _} -> {val, y + 1}
         _ -> {10000, -1}
       end
@@ -69,12 +67,13 @@ defmodule Aoc.Day1 do
   end
 
   defp compare_ints(str, dig) do
-    str |> case do
+    str
+    |> case do
       nil -> dig
       _ -> Enum.min([str, dig])
     end
     |> case do
-      {_, val} -> Integer.to_string(val)
+      {_, val} -> to_string(val)
       _ -> :broke
     end
   end
@@ -102,5 +101,4 @@ defmodule Aoc.Day1 do
       nil
     end
   end
-
 end
