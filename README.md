@@ -1,4 +1,4 @@
-# Aoc
+# Advent Of Code 2023
 [![Elixir CI](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml/badge.svg)](https://github.com/bensonalec/Advent-of-Code-2023/actions/workflows/elixir.yml)  
 This repo contains my 2023 Advent of Code submissions.  
 ## Features
@@ -16,3 +16,5 @@ For now I'm not focusing on scoreboard times, but if I do I'll put my scoreboard
 | ---------| -------| ------ |
 | 1        | [X]    |  [X]   |
 | 2        | [x]    |  [x]   |
+| 3        |        |        |
+      
