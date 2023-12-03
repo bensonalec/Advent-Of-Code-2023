@@ -14,7 +14,7 @@ For now I'm not focusing on scoreboard times, but if I do I'll put my scoreboard
 ## Progress
 | Day      | Part 1 | Part 2 |
 | ---------| -------| ------ |
-| 1        | [X]    |  [X]   |
-| 2        | [x]    |  [x]   |
-| 3        |        |        |
+| 1        | ⭐      |  ⭐   |
+| 2        | ⭐      |  ⭐   |
+| 3        |         |       |
       
