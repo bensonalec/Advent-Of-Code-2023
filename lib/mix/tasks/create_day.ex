@@ -92,7 +92,7 @@ defmodule Mix.Tasks.CreateDay do
     )
     File.write(
       readme_path,
-      "| #{day}        |        |        |
+      "| #{day}        |   |   |
       ",
       [:append, {:delayed_write, 100, 20}])
 
