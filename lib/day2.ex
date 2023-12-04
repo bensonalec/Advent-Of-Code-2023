@@ -30,11 +30,9 @@ defmodule Aoc.Day2 do
             elem(Integer.parse(Enum.at(parts, 0)), 0)
           )
         end)
-        # |> IO.inspect
       end)
     end)
     |> Enum.with_index
-    # |> IO.inspect
 
     Enum.filter(games, fn x ->
       {plays, _game_id} = x
@@ -67,7 +65,7 @@ defmodule Aoc.Day2 do
   end
 
   defp do_part_2(inp) do
-    games = inp
+    inp
     |> String.trim
     |> String.split("\n")
     |> Enum.map(fn x ->
@@ -101,6 +99,5 @@ defmodule Aoc.Day2 do
       |> Enum.product
     end)
     |> Enum.sum
-    |> IO.inspect
   end
 end
