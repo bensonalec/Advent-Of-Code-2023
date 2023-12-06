@@ -18,4 +18,5 @@ For now I'm not focusing on scoreboard times, but if I do I'll put my scoreboard
 | 2        | ⭐ | ⭐ |
 | 3        | ⭐ | ⭐ |
 | 4        | ⭐ | ⭐ |
+| 5        | ⭐ | ⭐ |
       
